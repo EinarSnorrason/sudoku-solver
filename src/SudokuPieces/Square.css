@@ -1,0 +1,15 @@
+.square{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: x-large;
+}
+
+.solved{
+    color: tomato;
+}
+.selected{
+    background-color: rgb(252, 252, 144);
+  }

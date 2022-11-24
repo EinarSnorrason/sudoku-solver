@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.board{
+  display: grid;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
+} 
+.group{
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game{
+  margin: 5vw;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.6fr 0.4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+
+}
+
+.sudokuButton{
+  background-color: rgb(14, 37, 243); /* Green */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  
+  font-size: 16px;
+  user-select: none;
+}
+.sudokuButton:hover{
+  background-color:  rgb(27, 238, 238);
+  color: black;
+} 
